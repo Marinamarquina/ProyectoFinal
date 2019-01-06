@@ -1,0 +1,245 @@
+ body {
+	 background-color: black;
+   font-family: Dancing Script OT;
+   }
+
+p {
+	text-align: center;
+	margin-top: 8em;
+}
+
+@keyframes conten-animacion {
+	0% {
+		position: relative;
+		margin-top: 150px
+	}
+	50% {
+		position: relative;
+    margin-top: -5px
+  }
+		100% {
+		position: relative;
+    margin-top: 0px
+	}
+}
+
+.encab {
+	animation-name: conten-animacion;
+	animation-duration: 2s;
+
+}
+
+
+
+
+
+
+.encab {
+	margin-left:150px;
+  padding: 0;
+  width: 80%;
+	height: 100px;
+	background-color: #5b7989;
+	border: 1px;
+	border-radius: 10px 10px 0px 0px;
+	}
+
+.encab h1 {
+	margin: 30px;
+	font-family: Dancing Script OT;
+	font-size: 10;
+	color: white;
+	float: left;
+	text-shadow: 2px 2px #02010a;
+		}
+
+.menuprincipal {
+	float: right;
+	font-family: Dancing Script OT;
+	font-size:27px;
+	margin-top: 40px;
+	margin-right: 10px;
+	color: white;
+	padding: 0;
+	}
+
+.menuprincipal a {
+			color: white;
+		}
+
+.contenedor {
+	margin: 0;
+	margin-left: 150px;
+  padding: 0;
+  width: 80%;
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contenedor div img {
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-top: 10px;
+  margin-bottom:10px;
+  height:90%;
+	width:95%;
+  border-width: 5px;
+  border-color: black;
+}
+.contenedor div {
+	width:33%;
+  }
+
+.pie {
+	margin-left:150px;
+  padding: 0;
+  width: 80%;
+	height: 300px;
+	border: 1px;
+	border-radius: 0px 0px 10px 10px;
+	}
+
+.contenpie {
+  	margin: 0;
+  	padding: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #C6d5c5;
+  	border: 1px;
+  	display: flex;
+  	flex-flow: row wrap;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .contenpie div {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+
+.pie .contenpie div {
+  width:20%;
+  }
+  .pie .contenpie p {
+    margin-top: 20px;
+    text-align: left;
+    }
+
+  .c1 img {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  .c2, .c4, .c6 img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .c3 img {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+  }
+
+
+
+
+
+
+@media all and (max-width: 500px) {
+
+	.encab {
+		margin-left:10px;
+	  padding: 0;
+	  width: 95%;
+		height: 200px;
+		background-color: #5b7989;
+		border: 1px;
+		border-radius: 10px 10px 0px 0px;
+		}
+
+	.encab h1 {
+		margin-left: 70px;
+		font-family: Dancing Script OT;
+		font-size: 10;
+		color: white;
+		float: center;
+		text-shadow: 2px 2px #02010a;
+			}
+
+	.menuprincipal {
+		float: center;
+		font-family: Dancing Script OT;
+		font-size:27px;
+		margin-top: 20px;
+		margin-right: 80px;
+		color: white;
+		padding: 0;
+		}
+
+		.menuprincipal a {
+								color: white;
+
+				}
+
+				.contenedor {
+					margin: 0;
+					margin-left: 10px;
+				  padding: 0;
+				  width: 95%;
+					background-color: #d5c75f;
+					border: 1px;
+					display: flex;
+					flex-flow: row wrap;
+				}
+        .contenedor div {
+        	width:95%;
+        }
+
+				.contenedor div img {
+					margin-left: 20px;
+					margin-right: 10px;
+					margin-top: 30px;
+				  height:90%;
+					width:95%;
+				}
+
+        .pie {
+          margin: 0;
+        	margin-left:10px;
+          padding: 0;
+          width: 95%;
+        	height: 600px;
+        	border: 1px;
+        	border-radius: 0px 0px 10px 10px;
+        	}
+
+        .contenpie {
+          	margin: 0;
+          	padding: 0;
+            width: 100%;
+            height: 600px;
+            background-color: #C6d5c5;
+          	border: 1px;
+          	display: flex;
+          	flex-flow: row wrap;
+            border-radius: 0px 0px 10px 10px;
+          }
+
+          .pie .contenpie div {
+            width:95%;
+            }
+
+}
+
+@media all and (max-width: 900px) and (min-width: 500px) {
+	.c1 {
+		width: 50%;
+	}
+	.c2 {
+		width: 50%;
+	}
+
+
+	}
