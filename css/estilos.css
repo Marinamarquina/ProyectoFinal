@@ -1,6 +1,6 @@
 body {
- background-color: black;
-  font-family: Dancing Script OT;
+  background-color: black;
+  font-family: 'Dancing Script OT';
   }
 
 @keyframes conten-animacion {
@@ -25,105 +25,108 @@ animation-duration: 2s;
 }
 
 
-.desc {
-margin-left:10px;
- padding: 0;
- margin: 0;
- width: 100%;
-height: 30px;
-background-color: #d5c75f;
-border: 1px;
- text-align: center;
- font-size: 20px;
-}
-
-
 .encab {
 margin-left:150px;
- padding: 0;
- width: 80%;
+padding: 0;
+width: 80%;
 height: 100px;
 background-color: #5b7989;
 border: 1px;
 border-radius: 10px 10px 0px 0px;
+display: flex;
+justify-content: space-around;
+align-items: center;
 }
 
-.encab h1 {
-margin: 30px;
-font-family: Dancing Script OT;
-font-size: 10;
-color: white;
-float: left;
-text-shadow: 2px 2px #02010a;
-  }
+.encab div {
+    width:50%
+ }
 
-.menuprincipal {
-float: right;
-font-family: Dancing Script OT;
+ .encab #tit h1 {
+  margin-top: 40px;
+  font-size: 10;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  text-align: left;
+  margin-left: 15px;
+   }
+
+#menu {
+text-align: right;
+margin-right: 15px;
 font-size:27px;
 margin-top: 40px;
-margin-right: 10px;
 color: white;
 padding: 0;
 }
 
-.menuprincipal a {
+  #menu a {
     color: white;
   }
 
 .contenedor1 {
 margin-left: 150px;
 margin-right: 150px;
- padding: 0;
- width: 80%;
+padding: 0;
+width: 80%;
 height: 400px;
 background-color: #82c3a6;
 border: 1px;
 }
 
 
-
 .contenedor1 div img {
 margin-left: 90px;
- margin-right: 90px;
+margin-right: 90px;
 margin-top: 30px;
 margin-bottom:30px;
- height: 350px;
+height: 350px;
 width: 85%;
+
 }
 
 .contenedor {
 margin: 0;
 margin-left: 150px;
- padding: 0;
- width: 80%;
+padding: 0;
+width: 80%;
 background-color: #d5c75f;
 border: 1px;
+height: 600px;
 display: flex;
 flex-flow: row wrap;
 }
 
-.contenedor div{
-border-width: 5px;
-border-color: black;
-}
-
-
-.contenedor div img {
-margin-left: 20px;
-margin-right: 10px;
-margin-top: 30px;
- height:90%;
-width:95%;
- border-width: 5px;
- border-color: black;
- box-shadow: 2px 3px  8px  0px  #82c3a6;
-}
-
 
 .c1, .c2 {
+  display: flex;
+  flex-flow: column;
   width: 50%;
+  height: 600px;
 }
+
+.ima {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom:0px;
+}
+
+.ima img {
+  height: 100%;
+  width: 95%;
+  box-shadow: 2px 3px  8px  0px  #82c3a6;
+}
+
+.desc {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top:0px;
+  font-size: 25px;
+  }
 
 .a1 {
  width: 100%;
@@ -131,23 +134,21 @@ width:95%;
 
 .pie {
 margin-left:150px;
- padding: 0;
- width: 80%;
-height: 300px;
+padding: 0;
+width: 80%;
 border: 1px;
 border-radius: 0px 0px 10px 10px;
 }
 
 .contenpie {
-  margin: 0;
-  padding: 0;
-   width: 100%;
-   height: 300px;
-   background-color: #C6d5c5;
-  border: 1px;
-  display: flex;
-  flex-flow: row wrap;
-   border-radius: 0px 0px 10px 10px;
+margin: 0;
+padding: 0;
+width: 100%;
+background-color: #C6d5c5;
+border: 1px;
+display: flex;
+flex-flow: row wrap;
+border-radius: 0px 0px 10px 10px;
  }
  .contenpie div {
    box-sizing: border-box;
@@ -166,7 +167,77 @@ border-radius: 0px 0px 10px 10px;
    }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 899px) {
+  .encab {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  }
+
+  .encab div {
+      width:100%
+   }
+
+   .encab #tit h1 {
+    margin: 0;
+    text-align: center;
+
+     }
+
+  #menu {
+    margin: 0;
+    text-align: center;
+    }
+
+
+    .contenedor {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    width: 80%;
+    background-color: #d5c75f;
+    border: 1px;
+    height: 900px;
+    display: flex;
+    flex-flow: column;
+    }
+
+
+    .c1, .c2 {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      height: 400px;
+    }
+
+    .ima {
+      height: 90%;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%;
+      margin-bottom:0px;
+    }
+
+    .ima img {
+      height: 100%;
+      width: 95%;
+    }
+
+    .desc {
+      height: 10%;
+      width: 100%;
+      text-align: center;
+      margin-top:0px;
+      font-size: 25px;
+      }
+
+
+
+
+
+
 .c1 {
   width: 95%;
   order: 1;
@@ -209,28 +280,13 @@ border-radius: 0px 0px 10px 10px;
   }
 
 .encab h1 {
-  margin-left: 70px;
-  font-family: Dancing Script OT;
+
+
   font-size: 10;
   color: white;
-  float: center;
+  text-align:center
   text-shadow: 2px 2px #02010a;
     }
-
-.menuprincipal {
-  float: center;
-  font-family: Dancing Script OT;
-  font-size:27px;
-  margin-top: 20px;
-  margin-right: 80px;
-  color: white;
-  padding: 0;
-  }
-
-  .menuprincipal a {
-              color: white;
-
-      }
 
       .contenedor {
         margin: 0;
@@ -258,10 +314,10 @@ border-radius: 0px 0px 10px 10px;
       }
 
        .pie {
-         margin: 0;
+        margin: 0;
         margin-left:10px;
-         padding: 0;
-         width: 95%;
+        padding: 0;
+        width: 95%;
         height: 600px;
         border: 1px;
         border-radius: 0px 0px 10px 10px;
@@ -270,13 +326,13 @@ border-radius: 0px 0px 10px 10px;
        .contenpie {
           margin: 0;
           padding: 0;
-           width: 100%;
-           height: 600px;
-           background-color: #C6d5c5;
+          width: 100%;
+          height: 600px;
+          background-color: #C6d5c5;
           border: 1px;
           display: flex;
           flex-flow: row wrap;
-           border-radius: 0px 0px 10px 10px;
+          border-radius: 0px 0px 10px 10px;
          }
 
          .pie .contenpie div {
@@ -285,26 +341,6 @@ border-radius: 0px 0px 10px 10px;
 
 }
 
-@media all and (max-width: 900px) and (min-width: 500px) {
-.c1, .c2 {
-  width: 50%;
-}
-
-
-.a1 {
-  color: #ddd;
-  width: 80%;
-}
-
-.contenedor1 .a1 img {
-  margin-left: 10px ;
-  margin-top: 30px;
-  margin-bottom:30px;
-  width: 80%;
-  height: 80%;
-}
-
-}
 
 
 .contenedor .c1 img:hover{
